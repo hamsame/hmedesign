@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+:root {
+  --primary-color: #424bde;
+  --primary-border: var(--primary-color) solid 2px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* semantic tags */
+header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: var(--primary-color);
+  width: 20vw;
+  height: 100vh;
+  color: white !important;
+  font-weight: bold;
+}
+
+.header-span {
+  width: 100%;
+  height: 80%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+header nav {
+  text-align: initial;
+  margin-top: 5vh;
+}
+
+header nav a {
+  display: block;
+  margin-bottom: 4vh;
+  color: white;
+  font-size: 1.4rem;
+  transition: all 0.4s ease-in-out;
+  padding: 0.25rem;
+}
+
+header nav a:hover {
+  background: white;
+  color: #333;
+  transform: scale(1.2);
+}
+
+section {
+  margin: 2vh auto;
+}
+
+/* utility classes */
+.btn {
+  color: #333;
+  background: #eee;
+  padding: 0.75rem;
+  font-weight: bold;
+  transition: all 0.6s ease-in-out;
+}
+
+.btn:hover {
+  background: black !important;
+  color: white;
+}
+
+/* section styling */
+.image-grid {
+  margin: 2vh 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+.image-grid img {
+  width: 90%;
+  transition: all 0.4 ease-in-out;
+}
+
+.image-grid img:hover {
+  opacity: 0.8;
+}
+
+main {
+  margin: 15vh 0 auto 22%;
+}
+
+main h1 {
+  margin-bottom: 2vh;
+  font-size: 3rem;
+}
+
+main h2 {
+  font-size: 2.1rem;
+  color: #222;
+}
+
+/* designers */
+.designers {
+  width: 95%;
+  margin: 2vh 2%;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.designers img {
+  width: 100%;
+}
+
+.designer {
+  background: #ddd;
+  padding: 1rem;
+}
+
+.designer h3 {
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+
+.designer p {
+  margin-top: 2vh;
+}
+
+/* plans styling */
+.ul-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+
+.inline {
+  width: 90%;
+  background: #ddd;
+}
+
+.inline h2 {
+  bottom: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem;
+}
+
+.inline li {
+  padding: 0.5rem;
+  margin-bottom: 2vh;
+  border-bottom: 0.15px solid #eee;
+}
+
+.inline li:nth-child(5) {
+  padding: 2rem;
+}
+
+span.big-li {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.inline li:last-child {
+  border: none;
+}
+
+.inline:last-child li:last-child > .btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.inline:last-child h2 {
+  background: var(--primary-color);
+}
+
+/* contact */
+#contact > h2 {
+  margin-bottom: 1vh;
+}
+
+#contact > p:first-of-type {
+  margin-bottom: 2vh;
+}
+#contact input {
+  width: 90%;
+  padding: 0.5rem;
+  margin-top: 0.1vh;
+  margin-bottom: 1vh;
+}
+
+#contact input:last-child {
+  background: var(--primary-color);
+  color: white;
+  box-shadow: none;
+  border: 0.2px solid black;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact input:last-child:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: 5vh;
+  position: relative;
+  color: white;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.footer-container {
+  background: var(--primary-color);
+  position: absolute;
+  padding: 1.5rem;
+  width: 100%;
+  height: 5vh;
+  justify-self: center;
+  text-align: center;
+}
